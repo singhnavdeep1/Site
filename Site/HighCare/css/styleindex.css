@@ -1,0 +1,65 @@
+/*menu deroulant*/
+
+/*mise en ligne des lien*/
+nav.menu ul li.btn {
+  display: inline-block;
+}
+
+/*retrait bouton*/
+nav.menu ul li.btn {
+  list-style-type: none;
+}
+
+/*retrait mots soulignes +taille +couleur*/
+nav.menu ul li.btn a {
+  color: #3b0405;
+  text-decoration: none;
+  font-size: 15px;
+}
+nav.menu ul li.btn h2 {
+  color: #3b0405;
+  text-decoration: none;
+}
+
+/*animation couleur des liens*/
+nav.menu ul li.btn:hover a {
+  color: #375d81;
+  background-color: #fcfae1;
+}
+
+/*bande du menu deroulant*/
+header {
+  background-color: #fcfae1;
+}
+
+/*bas page*/
+footer {
+  background-color: #fcfae1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+body {
+  background-color: #c4e3df;
+  padding-bottom: 100px;
+}
+
+/*bienvenue*/
+
+div.btn h1 {
+  text-align: center;
+  font-size: small;
+}
+div.btn h3 {
+  color: red;
+}
+
+p.Accueil {
+  color: blue;
+}
+a {
+  opacity: 0.9;
+  color: grey;
+}

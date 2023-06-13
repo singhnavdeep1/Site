@@ -1,0 +1,45 @@
+
+Nom de la base de donnees : site
+
+
+
+Tables :					colonnes			Type											
+
+		utilisateurs :  		
+
+
+						(*)	-id         		int 			AUTO_INCREMENT
+							-pseudo			varchar(100)
+							-email			varchar(100)
+							-password		text
+							-ip			varchar(20)
+							-date_inscription 	datetime 		valeur par defaut: current_timestamp()
+							-admin 			int 			valeur par defaut: 0
+
+
+
+		avis:
+
+							-id 			int 			AUTO_INCREMENT			
+						(**)	-articleId		int
+						(*)	-utilisateurId		int
+							-comment		text
+							-note			varchar()
+							-date 			datetime
+
+
+
+		articles:
+
+						(**)	-id 			int 			AUTO_INCREMENT
+							-titre			varchar(100)
+							-marque			varchar(100)
+							-peau			varchar(100)
+							-description  		text	
+							-imageUrl		text
+							-date			datetime
+
+(***) Colonnes en lien :
+					
+-utlisateurs.id == avis.utilisateurId
+-avis.articleId == articles.id
